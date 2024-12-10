@@ -1,0 +1,36 @@
+.service-div{
+display: flex;
+flex-direction: row;
+margin-left: 0%;
+margin-right: 0%;
+margin-top: 15px;
+width: 100%;
+}
+
+.service-left-div{
+flex: 33%;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+}
+.service-middle-div{
+flex: 34%;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+}
+.service-right-div{
+flex: 33%;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+}
+
+@media (max-width: 800px){
+
+.service-div{
+flex-direction: column;
+flex: 100%;
+}
+
+}

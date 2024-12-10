@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Speriamo Company Limited</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <meta charset="UTF-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="author" content="Nasoro Salum Nasoro/Kizenga" />
+  <meta name="description" content="Superiamo Website" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/header.css" />
+<link rel="stylesheet" href="css/slideshow.css" />
+<link rel="stylesheet" href="css/footer.css" />
+<style>
+
+*{
+ box-sizing: border-box;
+}
+
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+}
+
+.why-div{
+display: flex;
+flex-direction: row;
+margin-left: 0%;
+margin-right: 0%;
+margin-top: 15px;
+width: 100%;
+}
+
+.why-left-div{
+flex: 28%;
+background-color: white;
+text-align: left;
+border: 1px solid white;
+box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+}
+.why-middle-div{
+flex: 28%;
+background-color: white;
+align-items: center;
+justify-content: center;
+border: 1px solid white;
+box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+}
+.why-right-div{
+flex: 28%;
+background-color: white;
+align-items: center;
+justify-content: center;
+border: 1px solid white;
+box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+}
+
+@media (max-width: 768px){
+
+.why-div{
+flex-direction: column;
+flex: 100%;
+}
+
+}
+
+.p{
+font-family:verdana, sans-serif;
+font-style: oblique;
+font-size: 13px;
+color: #B0B0B0;
+}
+
+.img{
+border-radius: 18px;
+width: 100%; 
+height: 200px;
+opacity: 1.0;
+}
+
+.nav-bar .menu .active {
+color: white;
+background-color: #191970;
+border-radius: 4px;
+}
+
+.mobile-menu .active {
+color: white;
+background-color: #191970;
+}
+
+</style>
+</head>
+<body>
+<div class="nav-bar">
+  <div class="logo"><img src="images/Logo1.png" alt="Company logo" style="width:100px; height:50px;"/></div>
+  <div class="menu">
+    <a href="index.html" class="active">HOME</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="services.html">OUR SERVICES</a>
+    <a href="contact.html">CONTACT US</a>
+  </div>
+  <div class="hamburger" onclick="toggleMobileMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="active">HOME</a>
+  <a href="about.html">ABOUT US </a>
+  <a href="services.html">OUR SERVICES</a>
+  <a href="contact.html">CONTACT US</a>
+</div>
+
+<script src="javascript/mobilemenu.js"></script>
+
+<div class="slideshow-container">
+        <div class="slides">  
+            <div class="slide">
+                <img src="images/cfphoto4.png" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="images/cfphoto3.png" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="images/freight.png" alt="Slide 3">        
+            </div>
+        </div>
+        <div class="navigation-buttons">
+            <button class="prev" onclick="prevSlide()">❮</button>
+            <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+    </div>
+
+    <script src="javascript/slideshow.js"></script>
+
+
+<!--end of slide-->
+<br>
+<h4 align="center">WHY US?</h4>
+  <div class="why-div">
+    <div class="why-left-div">
+     <h3 style="color:darkslategray; text-align: center;">Affordability</h3>
+     <p style="margin-left:10px; margin-right:10px; margin-top:0; color:#696969;">We provide you with the best services at a very affordable price.</p>
+    </div>
+   <div class="why-middle-div">
+     <h3 style="color:darkslategray; text-align: center;">Fast & Reliable</h3>
+     <p style="margin-left:10px; margin-right:10px; margin-top:0px; color:#696969;">
+     We know that your time is very valuable. Our team is dedicated into making sure that we deliver on time.
+     </p>
+   </div>
+   <div class="why-right-div">
+     <h3 style="color:darkslategray; text-align: center;">Warehousing</h3>
+     <p style="margin-left:10px; margin-right:10px; margin-top:0; color:#696969;">We provide good standard and secure warehouse for your goods.</p>
+   </div>
+  </div><!--why div-->
+<br>
+<br>
+
+<h4 align="center">OUR SERVICES</h4>
+  <div class="service-div">
+   <div class="service-left-div">
+    <img src="images/doc.png" alt="documentation" class="img">
+    <b>Documentation</b>
+    <p class="p">Documentation after cargo delivery.</p>
+   </div>
+   <div class="service-middle-div">
+    <img src="images/freight.png" alt="freight" class="img">
+    <b>Freight forwarding</b>
+    <p class="p">Freight forwarding for imported and exported cargo by rail and road to final destinations.</p>
+  </div>
+  <div class="service-right-div">
+    <img src="images/warehouse.png" alt="warehouse" class="img">
+    <b>Warehousing</b>
+    <p class="p">Warehousing and storage of import and export goods. Ware house of 20 containers of 40ft and 40pcs of 20ft containers</p>
+   </div>
+  </div><!--service div-->
+
+<div class="footer">
+<div class="about-div">
+<h5 class="h5">ABOUT US</h5>
+<hr class="hr">
+<p class="fp">
+Speriamo is a company specialized in providing a range of services on clearing and forwarding in Tanzania.
+</p>
+</div><!--about div-->
+<div class="address-div">
+<h5 class="h5">OFFICE ADDRESS</h5>
+<hr class="hr">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="vertical-align:top;"><p class="fp"><strong>Location:</strong></p></td>
+<td><p class="fp">Mbaluku and Somali Kipande street, Mbokomu Tower First floor right wing room no 1, Kariakoo Dar es salaam Tanzania.</p></td>
+</tr>
+<tr>
+<td><p class="fp"><strong>Tel:</strong></p></td>
+<td><p class="fp">+255 689 316 964/+255 716 803 858</p></td>
+</tr>
+<tr>
+<td><p class="fp"><strong>Email:</strong></p></td>
+<td><p class="fp">Speriamo@gmail.com</p></td>
+</tr>
+</table> 
+</div><!--adress div-->
+<div class="socialmedia-div">
+<h5 class="h5">CONNECT WITH US</h5>
+<hr class="hr">
+<div class="social">
+<a href=""><img src="images/facebookicon.png" style="margin:10px; width:40px;" alt="Facebook icon"></a>
+<a href=""><img src="images/instagramicon.png" style="margin:10px; width:40px;" alt="Instagram icon"></a>
+<a href=""><img src="images/twitter.png" style="margin:10px; width:40px;" alt="Twitter icon"></a>
+<a href=""><img src="images/linkedinicon.png" style="margin:10px; width:40px;" alt="LinkedIn icon"></a>
+</div><!--social-->
+</div><!--socialmedia-div-->
+</div><!--footer-->
+<div style="margin:0px; background-color: #191970; height: auto; width: 100%; color:white; text-align: center; font-size: 14px;">
+ <br>
+ <br>
+ &copy;Speriamo Company LTD.
+ <br>
+ Designed & Developed by <a href="https://wa.me/+255652926123" style="color: white; text-decoration: none">Nasoro Nasoro/Kizenga</a>
+ <br>
+ <br>
+ <br>
+ <br>
+</div>
+</body>
+</html>

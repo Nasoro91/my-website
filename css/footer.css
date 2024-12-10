@@ -1,0 +1,49 @@
+.footer{
+display: flex;
+flex-direction: row;
+margin-top: 15px;
+background-color: #191970; 
+}
+.about-div{
+flex: 33%;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+}
+.address-div{
+flex: 34%;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+}
+.socialmedia-div{
+flex: 33%;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 10px;
+}
+
+@media (max-width: 768px){
+
+.footer{
+flex-direction: column;
+flex: 100%;
+}
+
+}
+
+.social{
+width: 100%
+display: flex;
+}
+.hr{
+border-top: 0.1px solid white;
+}
+.h5{
+color: white;
+}
+.fp{
+color:white;
+font-family: arial;
+font-size: 13px;
+}

@@ -1,0 +1,81 @@
+.nav-bar {
+      background-color: white;
+      color: #191970;
+      display: flex;
+      font-weight: bold;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;  
+      position: fixed;
+      z-index: 1; 
+      width: 100%;
+      top: 0;   
+}
+.nav-bar .logo {
+      font-size: 24px;
+      font-weight: bold;
+}
+.nav-bar .menu {
+      display: flex;
+      gap: 20px;
+}
+.nav-bar .menu a {
+      color: #191970;
+      text-decoration: none;
+      padding: 8px 12px;
+      transition: background 0.3s;
+}
+.nav-bar .menu a:hover {
+      background-color: #191970;
+      color: white;
+      border-radius: 4px;
+}
+.hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+}
+.hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: #191970;
+      border-radius: 5px;
+}
+.mobile-menu {
+      display: none;
+      flex-direction: column;
+      background-color: white;
+      position: fixed;
+      top: 75px;
+      right: 0%;
+      left: 0%;
+      border-radius: 0px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      z-index: 1;
+}
+.mobile-menu a {
+      color: #191970;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-bottom: 1px solid #555;
+}
+.mobile-menu a:hover {
+      background-color: #191970;
+      color: white;
+}
+.mobile-menu a:last-child {
+      border-bottom: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+      .nav-bar .menu {
+        display: none;
+}
+.hamburger {
+        display: flex;
+}
+}
