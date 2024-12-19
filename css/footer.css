@@ -48,3 +48,8 @@ font-family: 'Roboto', sans-serif;
 font-size: 13px;
 margin: 5px;
 }
+@media (max-width: 768px){
+.fp{
+margin: 7px;
+}
+}
